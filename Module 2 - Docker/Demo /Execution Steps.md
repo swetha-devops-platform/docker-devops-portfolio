@@ -25,6 +25,14 @@
 
 ---
 
-
+<img width="769" height="76" alt="image" src="https://github.com/user-attachments/assets/8ce5fed1-5c07-4461-8e1d-3491e2ca0031" />
 
 ---
+
+**Step 4 : Building an Docker Images by using below command**
+
+  - **docker build . -t imagename (pyimages)**
+
+---
+
+
