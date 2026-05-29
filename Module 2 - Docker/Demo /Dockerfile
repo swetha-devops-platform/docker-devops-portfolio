@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Step 7 - Run the Application
-CMD ["python", "app.py"]
+CMD ["python", "myapp.py"]
