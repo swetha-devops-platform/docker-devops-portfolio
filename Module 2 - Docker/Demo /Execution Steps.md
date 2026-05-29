@@ -16,7 +16,7 @@
 
 ---
 
-<img width="742" height="536" alt="image" src="https://github.com/user-attachments/assets/611047cd-7e45-4d7e-8e1b-543b842299fd" />
+<img width="717" height="522" alt="image" src="https://github.com/user-attachments/assets/bb6929b4-f767-47f9-bb3a-667abd084c72" />
 
 
 ---
@@ -69,7 +69,7 @@
 
 ---
 
-**Step 3 : Push the images to the Docker Hub 
+**Step 3 : Push the images to the Docker Hub**
 
    - **docker push swetha862001/pyimage:latest**
 
@@ -80,7 +80,7 @@
 
 ---
 
-** Step 4 : Verify on Docker Hub**
+**Step 4 : Verify on Docker Hub**
 
 ---
 
