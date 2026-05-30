@@ -4,7 +4,7 @@ A hands-on guide to understanding how multi-stage builds reduce Docker image siz
 
 ---
 
-## Prerequisites
+# Prerequisites
 
 - AWS EC2 instance (Ubuntu 22.04) or local machine
   
@@ -14,7 +14,7 @@ A hands-on guide to understanding how multi-stage builds reduce Docker image siz
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```
 docker-multistage-demo/
@@ -26,7 +26,11 @@ docker-multistage-demo/
 
 ---
 
-# Step 1: Launch an EC2 Instance
+# Steps to be followed: 
+
+---
+
+**Step 1: Launch an EC2 Instance**
 
   1. Go to **AWS Console → EC2 → Launch Instance**
   2. Choose **Ubuntu Server 22.04 LTS (Free Tier eligible)**
@@ -41,7 +45,7 @@ docker-multistage-demo/
 
 ---
 
-# Step 2: Connect to EC2 via SSH
+**Step 2: Connect to EC2 via SSH**
 
 ---
 
@@ -52,7 +56,7 @@ docker-multistage-demo/
 
 
 
-## Step 3: Install Docker on EC2
+**Step 3: Install Docker on EC2**
 
 ---
 
@@ -61,7 +65,7 @@ docker-multistage-demo/
 
 ---
 
-# Step 4: Clone Your GitHub Repository
+**Step 4: Clone Your GitHub Repository**
 
   - Install git on EC2 Instances - **sudo apt-get install -y git**
     
@@ -71,15 +75,33 @@ docker-multistage-demo/
 
 ---
 
-# Step 5: Build the Docker Image
+**Step 5: Build the Docker Image**
+
+**without multistage Dockerfile**
 
 ---
 
+<img width="1010" height="608" alt="image" src="https://github.com/user-attachments/assets/817e5644-879a-48d9-bcef-9040c4689ece" />
 
-
-### Expected Output:
 
 ---
+
+**with multistage Dockerfile**
+
+---
+
+<img width="1128" height="30" alt="image" src="https://github.com/user-attachments/assets/4bea9c37-9ff6-4a77-bce9-ae4b16b91f84" />
+
+<img width="835" height="48" alt="image" src="https://github.com/user-attachments/assets/dda66ee6-34ff-479f-8893-e0f777e9345c" />
+
+
+---
+
+**Expected Output:**
+
+---
+
+<img width="1039" height="174" alt="image" src="https://github.com/user-attachments/assets/4838a27d-66eb-4fea-835b-27ccf88f7567" />
 
 
 ---
@@ -89,13 +111,15 @@ docker-multistage-demo/
 
 | Type                  | Base Image         | Includes          | Approx Size |
 |-----------------------|--------------------|-------------------|-------------|
-| Without Multi-Stage | `ubuntu:22.04`     | OS + build tools  |     |
-| With Multi-Stage    | `python:3.11-slim` | Runtime only      |      |
-| Size Reduction      | —                  | —                 | **~67% smaller** |
+| Without Multi-Stage | `ubuntu:22.04`     | OS + build tools  |  156MB   |
+| With Multi-Stage    | `python:3.11-slim` | Runtime only      |  45.5MB    |
+| Size Reduction      | —                  | —                 |  70.8% smaller        |
 
 ---
 
 ## How Multi-Stage Build Works
+
+---
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -115,16 +139,3 @@ docker-multistage-demo/
 ```
 
 ---
-
-
-
-## 🚀 Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Docker multi-stage build size comparison"
-git remote add origin https://github.com/<your-username>/docker-multistage-demo.git
-git branch -M main
-git push -u origin main
-```
