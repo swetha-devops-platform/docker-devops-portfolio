@@ -63,6 +63,18 @@ docker-multistage-demo/
 
 # Step 4: Clone Your GitHub Repository
 
+  - Install git on EC2 Instances - **sudo apt-get install -y git**
+    
+---
+
+<img width="1417" height="196" alt="image" src="https://github.com/user-attachments/assets/6c2b1af6-e276-4aef-94bf-34e0bab9eb9a" />
+
+---
+
+# Step 5: Build the Docker Image
+
+---
+
 
 
 ### Expected Output:
