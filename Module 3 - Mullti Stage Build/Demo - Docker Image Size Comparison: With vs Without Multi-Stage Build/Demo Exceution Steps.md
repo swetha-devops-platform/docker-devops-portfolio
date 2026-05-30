@@ -4,28 +4,6 @@ A hands-on guide to understanding how multi-stage builds reduce Docker image siz
 
 ---
 
-# Prerequisites
-
-- AWS EC2 instance (Ubuntu 22.04) or local machine
-  
-- Docker installed
-  
-- Basic knowledge of Dockerfile
-
----
-
-# Project Structure
-
-```
-docker-multistage-demo/
-├── calculator.py
-├── Dockerfile.single        # Without multi-stage build
-├── Dockerfile.multistage    # With multi-stage build
-└── README.md
-```
-
----
-
 # Steps to be followed: 
 
 ---
