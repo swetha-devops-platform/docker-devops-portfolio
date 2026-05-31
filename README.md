@@ -77,8 +77,8 @@ Every commit in this repository represents progress toward becoming a DevOps Eng
 
 ## Connect With Me
 
-GitHub: https://github.com/YOUR_USERNAME
-Linkedin: 
+GitHub: https://github.com/swetha-devops-platform
+Linkedin: www.linkedin.com/in/swetha-ravi-717957215
 
 If you find this repository useful, feel free to star it and follow my DevOps learning journey.
 
